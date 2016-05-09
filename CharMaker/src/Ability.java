@@ -1,5 +1,5 @@
 
-public enum Abilities {
+public enum Ability {
 	STR,
 	DEX,
 	CON,
