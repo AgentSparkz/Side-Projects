@@ -1,5 +1,5 @@
 
-public enum Ability {
+public enum Stat {
 	STR,
 	DEX,
 	CON,

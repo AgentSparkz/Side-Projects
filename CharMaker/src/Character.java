@@ -2,8 +2,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Character {
-	Map<Ability, Integer> abilityScores = new HashMap<>();
+	int health;
+	int maxHealth;
+	Map<Stat, Integer> stats = new HashMap<>();
 	String name;
-	CharClass charClass;
+	Map<CharClass, Integer> classLevels = new HashMap<>();
 	Race race;
 }
