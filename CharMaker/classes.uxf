@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>110</x>
+      <y>630</y>
+      <w>160</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>StatModifier: Mod&lt;Stat&gt;
+--
+stat: Stat
+amt: int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>370</x>
+      <y>40</y>
+      <w>40</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>Stat
+--
+Str
+Dex
+Con
+Int
+Wis
+Cha</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>890</x>
+      <y>410</y>
+      <w>100</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Die
+--
+sides: int
+roll(): int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>860</x>
+      <y>300</y>
+      <w>100</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Dice
+--
+dice: [Dice]
+roll(): int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>490</x>
+      <y>70</y>
+      <w>200</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>Character
+--
+health: int
+maxHealth: int
+stats: Map&lt;Stat, int&gt;
+skills: Map&lt;Skill, int&gt;
+race: Race
+classes: Map&lt;CharClass, int&gt;
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>220</x>
+      <y>310</y>
+      <w>120</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Race
+--
+name: String
+mods: List&lt;Mod&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>300</x>
+      <y>490</y>
+      <w>50</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>/Mod/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>150</x>
+      <y>500</y>
+      <w>200</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>180.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>540</x>
+      <y>410</y>
+      <w>140</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>/CharClass/
+--
+name: String
+hitDie: Die
+babRate: BABRate
+fortSave: SaveRate
+refSave: SaveRate
+willSave: SaveRate
+baseSkillPoints: int
+goldDice: [Dice]
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>90</x>
+      <y>140</y>
+      <w>110</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>SaveRate
+--
+GoodSave([int])
+BadSave([int])</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
